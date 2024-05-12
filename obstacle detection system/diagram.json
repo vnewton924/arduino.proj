@@ -1,0 +1,16 @@
+{
+  "version": 1,
+  "author": "Anonymous maker",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-arduino-uno", "id": "uno", "top": 0, "left": 0, "attrs": {} },
+    { "type": "wokwi-hc-sr04", "id": "ultrasonic1", "top": -97.3, "left": 260.7, "attrs": {} }
+  ],
+  "connections": [
+    [ "ultrasonic1:VCC", "uno:5V", "red", [ "v246.97", "h-169.63" ] ],
+    [ "ultrasonic1:GND", "uno:GND.3", "black", [ "v215.76", "h-181.51" ] ],
+    [ "ultrasonic1:TRIG", "uno:A4", "green", [ "v226.83", "h-94.05" ] ],
+    [ "ultrasonic1:ECHO", "uno:A5", "green", [ "v0" ] ]
+  ],
+  "dependencies": {}
+}
